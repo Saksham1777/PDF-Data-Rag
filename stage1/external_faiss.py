@@ -1,14 +1,11 @@
 # Imports
 import glob
 from pathlib import Path
-from langchain.text_splitter import PythonCodeTextSplitter
 from langchain_community.vectorstores import FAISS
 from langchain_core.documents import Document
 from sentence_transformers import SentenceTransformer
 from langchain_core.embeddings import Embeddings
 from langchain.text_splitter import RecursiveCharacterTextSplitter
-import faiss
-import pymupdf as fitz 
 from pypdf import PdfReader
 
 # Embedding class
