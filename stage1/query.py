@@ -33,7 +33,7 @@ client = genai.Client()
 
 # Load vector store
 embedding_model = SentenceTransformerEmbeddings("all-mpnet-base-v2")
-library = FAISS.load_local("faiss_index_multi2", embedding_model, allow_dangerous_deserialization=True)
+library = FAISS.load_local("faiss_index_multi", embedding_model, allow_dangerous_deserialization=True)
 
 # Query setup
 query = ""
