@@ -65,16 +65,19 @@ After the index is built and saved locally, run:
 python query.py
 ```
 This will:
-Load the local FAISS vector store.
-Perform a similarity search using your query.
-Filter top matching documents for diversity and quality.
-Generate an answer using the Gemini API.
-Print the final answer along with the source PDF and page numbers.
+
+- Load the local FAISS vector store
+- Perform a similarity search using your query
+- Filter top matching documents for diversity and quality
+- Generate an answer using the Gemini API
+-Print the final answer along with the source PDF and page numbers
 
 ---
-Configuration
-Embedding Model: all-mpnet-base-v2 (SentenceTransformers)
-Chunk Size: 850 characters with 50-character overlap
-FAISS backend: CPU version
-Gemini Model: gemini-2.5-flash (via google-generativeai)
-All embeddings are processed on CPU for maximum compatibility.
+Configuration:
+
+- Embedding Model: all-mpnet-base-v2 (from SentenceTransformers)
+- Chunk Size: 850 characters
+- Chunk Overlap: 50 characters
+- FAISS Backend: CPU version
+- Gemini Model: gemini-2.5-flash (via google-generativeai)
+- Compute: All embeddings are processed on CPU for compatibility
