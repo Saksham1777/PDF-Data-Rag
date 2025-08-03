@@ -4,7 +4,7 @@ A powerful and efficient semantic search tool built to index and query large vol
 
 ---
 
-## 🚀 Features
+## Features
 
 - Automatically parses and chunks academic PDFs using `PyMuPDF` and `LangChain`.
 - Embeds and stores chunks in a `FAISS` vector index for efficient semantic search.
@@ -50,7 +50,7 @@ Create a .env file in the project root with the following content:
 ```
 Gemini_api_key=your_google_gemini_api_key
 ```
-
+---
 ### Usage
 Step 1: Build the Vector Index
 Run the following script to parse, split, embed, and index all PDFs in the data/ folder:
@@ -66,11 +66,12 @@ python query.py
 ```
 This will:
 Load the local FAISS vector store.
-Perform sa imilarity search using your query.
+Perform a similarity search using your query.
 Filter top matching documents for diversity and quality.
 Generate an answer using the Gemini API.
 Print the final answer along with the source PDF and page numbers.
 
+---
 Configuration
 Embedding Model: all-mpnet-base-v2 (SentenceTransformers)
 Chunk Size: 850 characters with 50-character overlap
